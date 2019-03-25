@@ -49,36 +49,36 @@
         <!-- 信用卡模块 -->
         <div class="credit">
             <ul>
-                <li>
+                <router-link  tag="li" to="/home/cardCenter">
                     <span class="handle"><van-icon name="description" /></span>
                     <div class="channel">
                         <h3>信用卡办理</h3>
                         <p>佣金当天结算</p>
                         <span>官方渠道</span>
                     </div>
-                </li>
+                </router-link>
+                <router-link tag="li" to="/home/receivables">
+                    <span class="handle"><van-icon name="description" /></span>
+                    <div class="channel">
+                        <h3>商户收款</h3>
+                        <p>快捷支付</p>
+                        <span>落地商户</span>
+                    </div>
+                </router-link>
                 <li>
                     <span class="handle"><van-icon name="description" /></span>
                     <div class="channel">
-                        <h3>信用卡办理</h3>
-                        <p>佣金当天结算</p>
-                        <span>官方渠道</span>
+                        <h3>我要贷款</h3>
+                        <p>实时审批&nbsp;授信额度</p>
+                        <span>GU>></span>
                     </div>
                 </li>
                 <li>
                     <span class="handle"><van-icon name="description" /></span>
                     <div class="channel">
-                        <h3>信用卡办理</h3>
-                        <p>佣金当天结算</p>
-                        <span>官方渠道</span>
-                    </div>
-                </li>
-                <li>
-                    <span class="handle"><van-icon name="description" /></span>
-                    <div class="channel">
-                        <h3>信用卡办理</h3>
-                        <p>佣金当天结算</p>
-                        <span>官方渠道</span>
+                        <h3>信用卡管家</h3>
+                        <p>落地商户空卡周转</p>
+                        <span>智能还款</span>
                     </div>
                 </li>
             </ul>
@@ -260,6 +260,9 @@ export default {
                        margin-top:30px;
                    }
                    >.channel {
+                       text-align: left;
+                       flex:1;
+                       margin-left:30px;
                        >h3 {
                            font-size:30px;
                            font-weight: bolder;
@@ -274,7 +277,7 @@ export default {
                            border:2px solid #000;
                            color:white;
                            background-color:#CF9C5D;
-                           border-radius: 10px;
+                           border-radius:15px;
                            padding:1px 20px 5px 20px;
                            font-size: 14px;
                            margin-bottom: 10px;
